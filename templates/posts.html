@@ -1,0 +1,13 @@
+{%  include 'base.html'  %}
+
+{%  block title  %}
+    <title>main page</title>
+{%  endblock  %}
+
+{%  block content  %}
+    <a href="{{ url_for('create_post') }}">Створити пост</a>
+    {%  for post in posts  %}
+        <h1>{{  post.title  }}</h1>
+        <p>{{  post.title  }}</p>
+    {%  endfor  %}
+{%  endblock  %}
