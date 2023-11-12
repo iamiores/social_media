@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Main page</title>
+        <style>
+            p {
+                color: #20B2AA;
+                border: 3px solid black;
+                border-radius: 15px
+            }
+        </style>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    </head>
+    <body style="background-color:black; color:white">
+        <h1 style="color:blue; background-color:rgba(234, 234, 62, 8); padding-left:50px; margin-top:20%; font-size: 100px">Hello</h1>
+        <div class="colum">
+            <h2>Hello</h2>
+            <h3>Hello</h3>
+        </div>
+        <div class="colum">
+            <h2>Hello</h2>
+            <h3>Hello</h3>
+        </div>
+        <br>
+        <br>
+        <h4>Hello</h4>
+        <h5>Hello</h5>
+        <h6>Hello</h6>
+        <p>My friend</p>
+        <img src="https://th.bing.com/th/id/OIG.CO2sHWK_IEYIwzXsC2hX">
+        <img src="{{ url_for('static', filename='images/cote.jpg') }}">
+        <br>
+        <a href='{{  url_for("index")  }}'>press me</a>
+    </body>
+</html>

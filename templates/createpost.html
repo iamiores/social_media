@@ -1,0 +1,16 @@
+{%  include 'base.html'  %}
+
+{%  block title  %}
+    <title>post page</title>
+{%  endblock  %}
+
+{%  block content  %}
+    <form method="post" action="{{ url_for('create_post') }}">
+        <p>Введіть заголовок:</p>
+        <input type="text" name="title">
+        <p>Введіть контент:</p>
+        <input type="text" name="content">
+        <br>
+        <input type="submit" value="Відправити">
+    </form>
+{%  endblock  %}
